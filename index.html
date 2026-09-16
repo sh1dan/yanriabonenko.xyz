@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="sh1dan - interactive particle text experience">
+    <title>sh1dan</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <audio id="theme" autoplay loop playsinline>
+        <source id="audioSource" src="./media/theme.mp3" type="audio/mp3">
+    </audio>
+
+    <button type="button" class="bigshot" id="duckBtn" aria-label="Toggle Big Shot mode"
+       ontouchstart="bigshot_yes(event)" onmouseover="bigshot_yes(event)" 
+       ontouchend="bigshot_no(event)" onmouseleave="bigshot_no(event)"
+       ontouchcancel="bigshot_no(event)">🦆</button>
+    <canvas id="canvas"></canvas>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/particles.js"></script>
+</body>
+</html>
